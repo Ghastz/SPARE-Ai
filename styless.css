@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1AA7EC;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+section {
+	padding: 50px;
+}
+
+section h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+section p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+section button {
+	background-color: #1AA7EC;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* Contact Us Section Styles */
+  #contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .contact-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-right: auto;
+}
+
+
+.social-icons a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: 0 10px;
+	color: #fff;
+	background-color: #1AA7EC;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+	transform: translateY(-5px);
+}
+
+.social-icons i {
+	font-size: 1.5rem;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+	header {
+		padding: 10px;
+	}
+	nav {
+		flex-wrap: wrap;
+	}
+	nav ul {
+		flex-direction: column;
+		margin: 10px 0;
+	}
+	nav ul li {
+		margin: 0;
+	}
+	section {
+		padding: 20px;
+	}
+	section h2 {
+		font-size: 24px;
+	}
+	form input[type="submit"], section button {
+		font-size: 16px;
+		padding: 8px 16px;
+	}
+}
